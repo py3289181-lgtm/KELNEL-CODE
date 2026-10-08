@@ -1,0 +1,35 @@
+.statusbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--statusbar-height);
+  background: var(--bg-statusbar);
+  color: var(--text-statusbar);
+  font-size: 12px;
+  flex-shrink: 0;
+  user-select: none;
+  padding: 0 4px;
+}
+.statusbar-left, .statusbar-right, .statusbar-center {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.statusbar-center { flex: 1; justify-content: center; }
+.statusbar-item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 8px;
+  color: var(--text-statusbar);
+  font-size: 12px;
+  border-radius: 0;
+  white-space: nowrap;
+  gap: 4px;
+  opacity: 0.9;
+}
+.statusbar-item:hover { background: rgba(255,255,255,0.15); opacity: 1; }
+.git-branch { font-weight: 500; }
+.kernelcode-badge { font-weight: 600; letter-spacing: 1px; }
+.language-pill { text-transform: capitalize; }
+.theme-indicator { font-size: 11px; max-width: 120px; overflow: hidden; text-overflow: ellipsis; }

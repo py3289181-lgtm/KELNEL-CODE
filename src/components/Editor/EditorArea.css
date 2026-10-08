@@ -1,0 +1,60 @@
+.editor-area {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+  background: var(--bg-primary);
+}
+.editor-welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.welcome-screen {
+  text-align: center;
+  color: var(--text-secondary);
+}
+.welcome-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+  opacity: 0.8;
+}
+.welcome-title {
+  font-size: 28px;
+  font-weight: 300;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+.welcome-subtitle {
+  font-size: 14px;
+  margin-bottom: 32px;
+  color: var(--text-secondary);
+}
+.welcome-shortcuts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.shortcut-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background: var(--bg-secondary);
+  border-radius: 6px;
+  font-size: 12px;
+}
+kbd {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 2px 6px;
+  font-family: var(--font-editor);
+  font-size: 11px;
+  color: var(--text-accent);
+  white-space: nowrap;
+}

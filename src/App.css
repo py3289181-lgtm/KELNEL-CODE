@@ -1,0 +1,38 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.app-body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.editor-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+}
+
+.editor-preview {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Zen Mode */
+.zen-mode {
+  background: var(--bg-primary);
+}
+.zen-mode .editor-container {
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
